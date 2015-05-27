@@ -1,4 +1,44 @@
-source ~/.commonrc
+###########
+# General #
+###########
+
+export EDITOR='vim'
+export PAGER='less'
+
+###########
+# Aliases #
+###########
+
+alias R='R --quiet' # R without verbose
+alias l='ls --color=auto -alh' # faster ls
+alias wget='wget --no-check-certificate' # HTTPS error is so annoying
+alias nodup="awk '!x[\$0]++'" # removes duplicates
+
+##############
+# Protection #
+##############
+
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+###########
+# History #
+###########
+
+# export HISTFILE=~/.histfile
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+export HISTCONTROL=ignoreups
+export HISTIGNORE='l'
+
+##########
+# Colors #
+##########
+
+export GREP_OPTIONS='--color=auto' # grep with color output
+alias ls='ls --color=auto'
 
 ###########
 # History #
@@ -51,3 +91,5 @@ __prompt_command () {
 
 export PROMPT_COMMAND=__prompt_command
 export PS2='> '
+
+# vim: syntax=sh

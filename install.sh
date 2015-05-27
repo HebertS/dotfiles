@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-git submodule update --init
-
 declare -a resource
 while read line ; do
   resource+=("$line")
@@ -21,6 +19,8 @@ case "$1" in
     ;;
 
   'init' )
+    git submodule update --init
+
     for r in "${resource[@]}" ; do
       src="$(pwd)/$r"
       target="$HOME/$r"
