@@ -2,8 +2,8 @@
 # Paths #
 #########
 
-if [ -f ~/.bash_profile ]; then
-   source ~/.bash_profile
+if [ -f ~/.bashrc_local ]; then
+   source ~/.bashrc_local
 fi
 
 ###########
