@@ -18,7 +18,7 @@ export PAGER='less'
 ###########
 
 alias R='R --quiet' # R without verbose
-alias l='ls --color=auto -alh' # faster ls
+alias l='ls --color=auto -rtalh' # faster ls
 alias wget='wget --no-check-certificate' # HTTPS error is so annoying
 alias nodup="awk '!x[\$0]++'" # removes duplicates
 
