@@ -11,6 +11,7 @@ set modelines=1
 filetype plugin on
 filetype indent on
 syntax on
+set hlsearch
 
 " Plugins
 let mapleader=","
