@@ -52,3 +52,13 @@ set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \
 
 " Comments
 autocmd FileType r set commentstring=#\ %s
+
+" Vim training wheels
+noremap  <Up>    ""
+noremap! <Up>    <Esc>
+noremap  <Down>  ""
+noremap! <Down>  <Esc>
+noremap  <Left>  ""
+noremap! <Left>  <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
