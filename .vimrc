@@ -55,10 +55,10 @@ autocmd FileType r set commentstring=#\ %s
 
 " Vim training wheels
 noremap  <Up>    ""
-noremap! <Up>    <Esc>
+noremap! <Up>    <NOP>
 noremap  <Down>  ""
-noremap! <Down>  <Esc>
+noremap! <Down>  <NOP>
 noremap  <Left>  ""
-noremap! <Left>  <Esc>
+noremap! <Left>  <NOP>
 noremap  <Right> ""
-noremap! <Right> <Esc>
+noremap! <Right> <NOP>
