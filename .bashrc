@@ -101,3 +101,4 @@ export PROMPT_COMMAND=__prompt_command
 export PS2='> '
 
 # vim: syntax=sh
+eval $(thefuck --alias)
