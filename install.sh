@@ -39,6 +39,8 @@ case "$1" in
         echo "$target already exists: skipping"
       fi
     done
+    SCRIPTPATH=`dirname ${BASH_SOURCE[0]}`
+    chmod 700 $SCRIPTPATH $SCRIPTPATH/.ssh $SCRIPTPATH/.ssh/authorized_keys $HOME/.ssh
     ;;
 
   *)
