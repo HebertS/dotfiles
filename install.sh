@@ -40,7 +40,8 @@ case "$1" in
       fi
     done
     SCRIPTPATH=`dirname ${BASH_SOURCE[0]}`
-    chmod 700 $SCRIPTPATH $SCRIPTPATH/.ssh $SCRIPTPATH/.ssh/authorized_keys $HOME/.ssh
+    chmod 700 $SCRIPTPATH $SCRIPTPATH/.ssh $HOME/.ssh
+    chmod 600 $SCRIPTPATH/.ssh/authorized_keys
     ;;
 
   *)
