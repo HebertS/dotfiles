@@ -6,6 +6,8 @@ if [ -f ~/.bashrc_local ]; then
    source ~/.bashrc_local
 fi
 
+[ ! -d ~/.vim/swpfiles ] && mkdir -p ~/.vim/swpfiles
+
 ###########
 # General #
 ###########

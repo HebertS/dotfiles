@@ -44,7 +44,7 @@ set ruler
 
 " Swap and temp file location
 " set backupdir=/tmp,.
-" set directory=/tmp,.
+set directory=~/.vim/swpfiles/
 
 " Statusline
 set laststatus=2
