@@ -46,6 +46,9 @@ set ruler
 " set backupdir=/tmp,.
 set directory=~/.vim/swpfiles/
 
+" pandoc plugin
+let g:pandoc#modules#disabled = ["folding"]
+
 " Statusline
 set laststatus=2
 set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ %{strftime(\"%H:%M:%S\")}\ %{fugitive#statusline()}
